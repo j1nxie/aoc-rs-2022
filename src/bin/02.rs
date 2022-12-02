@@ -1,7 +1,7 @@
 pub fn part_one(input: &str) -> Option<u32> {
     let mut score: u32 = 0;
     for line in input.lines() {
-        let (opponent, response) = line.split_once(" ").unwrap();
+        let (opponent, response) = line.split_once(' ').unwrap();
         let (left, right): (i32, i32);
 
         match opponent {
@@ -73,7 +73,7 @@ impl MatchVal {
 pub fn part_two(input: &str) -> Option<u32> {
     let mut score: u32 = 0;
     for line in input.lines() {
-        let (opponent, response) = line.split_once(" ").unwrap();
+        let (opponent, response) = line.split_once(' ').unwrap();
 
         let left = match opponent {
             "A" => 1,
