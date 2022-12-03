@@ -98,12 +98,7 @@ pub fn part_two(input: &str) -> Option<u32> {
             _ => unreachable!(),
         };
 
-        match right.matches() {
-            1 => score += 1,
-            2 => score += 2,
-            3 => score += 3,
-            _ => unreachable!(),
-        }
+        score += right.matches() as u32;
     }
 
     Some(score)
